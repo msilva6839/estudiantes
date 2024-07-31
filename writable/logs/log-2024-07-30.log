@@ -1,0 +1,132 @@
+ERROR - 2024-07-30 12:33:37 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/marcossilva/Sites/estudiantes/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Users/marcossilva/Sites/estudiantes/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', 'msilva', Object(SensitiveParameterValue), 'estudiantes_db', 3306, '', 0)
+#1 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/marcossilva/Sites/estudiantes/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/marcossilva/Sites/estudiantes/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/marcossilva/Sites/estudiantes/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/marcossilva/Sites/estudiantes/app/Controllers/EstudianteControlador.php(13): CodeIgniter\BaseModel->findAll()
+#7 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(933): App\Controllers\EstudianteControlador->index()
+#8 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+#9 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/marcossilva/Sites/estudiantes/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/marcossilva/Sites/estudiantes/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/marcossilva/Sites/estudiantes/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/marcossilva/Sites/estudiantes/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/marcossilva/Sites/estudiantes/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/marcossilva/Sites/estudiantes/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/marcossilva/Sites/estudiantes/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/marcossilva/Sites/estudiantes/app/Controllers/EstudianteControlador.php(13): CodeIgniter\BaseModel->findAll()
+#6 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(933): App\Controllers\EstudianteControlador->index()
+#7 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+#8 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/marcossilva/Sites/estudiantes/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/marcossilva/Sites/estudiantes/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/marcossilva/Sites/estudiantes/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-30 12:33:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: estudiantes]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `estudiantes`', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/EstudianteControlador.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\EstudianteControlador->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-07-30 12:33:57 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Users/marcossilva/Sites/estudiantes/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Users/marcossilva/Sites/estudiantes/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', 'msilva', Object(SensitiveParameterValue), 'estudiantes_db', 3306, '', 0)
+#1 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/marcossilva/Sites/estudiantes/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/marcossilva/Sites/estudiantes/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/marcossilva/Sites/estudiantes/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/marcossilva/Sites/estudiantes/app/Controllers/EstudianteControlador.php(13): CodeIgniter\BaseModel->findAll()
+#7 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(933): App\Controllers\EstudianteControlador->index()
+#8 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+#9 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/marcossilva/Sites/estudiantes/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 /Users/marcossilva/Sites/estudiantes/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/marcossilva/Sites/estudiantes/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Users/marcossilva/Sites/estudiantes/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/marcossilva/Sites/estudiantes/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/marcossilva/Sites/estudiantes/system/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Users/marcossilva/Sites/estudiantes/system/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 /Users/marcossilva/Sites/estudiantes/system/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Users/marcossilva/Sites/estudiantes/app/Controllers/EstudianteControlador.php(13): CodeIgniter\BaseModel->findAll()
+#6 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(933): App\Controllers\EstudianteControlador->index()
+#7 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+#8 /Users/marcossilva/Sites/estudiantes/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/marcossilva/Sites/estudiantes/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 /Users/marcossilva/Sites/estudiantes/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/marcossilva/Sites/estudiantes/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-07-30 12:33:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: estudiantes]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `estudiantes`', [], false)
+ 3 SYSTEMPATH/Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/EstudianteControlador.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\EstudianteControlador->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-30 20:00:35 --> Error: Class "App\Models\EstudianteModel" not found
+[Method: POST, Route: estudiantes/guardar]
+in APPPATH/Controllers/EstudianteControlador.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\EstudianteControlador->guardar()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-30 20:01:12 --> Error: Class "App\Controllers\EstudianteModel" not found
+[Method: POST, Route: estudiantes/guardar]
+in APPPATH/Controllers/EstudianteControlador.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\EstudianteControlador->guardar()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-30 20:01:38 --> Error: Class "App\Controllers\EstudianteModel" not found
+[Method: POST, Route: estudiantes/guardar]
+in APPPATH/Controllers/EstudianteControlador.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\EstudianteControlador->guardar()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-07-30 20:02:05 --> Error: Class "App\Controllers\EstudianteModel" not found
+[Method: POST, Route: estudiantes/guardar]
+in APPPATH/Controllers/EstudianteControlador.php on line 34.
+ 1 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\EstudianteControlador->guardar()
+ 2 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteControlador))
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
